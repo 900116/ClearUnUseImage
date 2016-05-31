@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC27183B1CFD64FF00BC3D53 /* GHProjManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC27183A1CFD64FF00BC3D53 /* GHProjManager.m */; };
+		EC27183D1CFD8B0300BC3D53 /* ImageWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC27183C1CFD8B0300BC3D53 /* ImageWindow.xib */; };
+		EC2718401CFD8CE100BC3D53 /* GHImageWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC27183F1CFD8CE100BC3D53 /* GHImageWindowController.m */; };
+		EC9976E81CFD3D6900485F31 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9976E71CFD3D6900485F31 /* AppKit.framework */; };
+		EC9976EA1CFD3D6900485F31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9976E91CFD3D6900485F31 /* Foundation.framework */; };
+		EC9976EE1CFD3D6900485F31 /* ClearUnuseImage.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = EC9976ED1CFD3D6900485F31 /* ClearUnuseImage.xcscheme */; };
+		EC9976F11CFD3D6900485F31 /* ClearUnuseImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9976F01CFD3D6900485F31 /* ClearUnuseImage.m */; };
+		EC9976F41CFD3D6900485F31 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9976F31CFD3D6900485F31 /* NSObject_Extension.m */; };
+		EC99772C1CFD3DAB00485F31 /* NSString+XCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9976FE1CFD3DAB00485F31 /* NSString+XCAdditions.m */; };
+		EC99772D1CFD3DAB00485F31 /* XCProject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977001CFD3DAB00485F31 /* XCProject+Extensions.m */; };
+		EC99772E1CFD3DAB00485F31 /* XCTarget+XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977021CFD3DAB00485F31 /* XCTarget+XCProject.m */; };
+		EC99772F1CFD3DAB00485F31 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977041CFD3DAB00485F31 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC9977301CFD3DAB00485F31 /* XCKeyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977071CFD3DAB00485F31 /* XCKeyBuilder.m */; };
+		EC9977311CFD3DAB00485F31 /* XCAbstractDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977091CFD3DAB00485F31 /* XCAbstractDefinition.m */; };
+		EC9977321CFD3DAB00485F31 /* XCBuildSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99770B1CFD3DAB00485F31 /* XCBuildSettings.m */; };
+		EC9977331CFD3DAB00485F31 /* XCClassDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99770D1CFD3DAB00485F31 /* XCClassDefinition.m */; };
+		EC9977341CFD3DAB00485F31 /* XCFileOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99770F1CFD3DAB00485F31 /* XCFileOperationQueue.m */; };
+		EC9977351CFD3DAB00485F31 /* XCFrameworkDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977111CFD3DAB00485F31 /* XCFrameworkDefinition.m */; };
+		EC9977361CFD3DAB00485F31 /* XCGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977131CFD3DAB00485F31 /* XCGroup.m */; };
+		EC9977371CFD3DAB00485F31 /* XcodeMemberType.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977171CFD3DAB00485F31 /* XcodeMemberType.m */; };
+		EC9977381CFD3DAB00485F31 /* XcodeSourceFileType.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977191CFD3DAB00485F31 /* XcodeSourceFileType.m */; };
+		EC9977391CFD3DAB00485F31 /* XCProject+SubProject.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99771B1CFD3DAB00485F31 /* XCProject+SubProject.m */; };
+		EC99773A1CFD3DAB00485F31 /* XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99771D1CFD3DAB00485F31 /* XCProject.m */; };
+		EC99773B1CFD3DAB00485F31 /* XCProjectBuildConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99771F1CFD3DAB00485F31 /* XCProjectBuildConfig.m */; };
+		EC99773C1CFD3DAB00485F31 /* XCSourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977211CFD3DAB00485F31 /* XCSourceFile.m */; };
+		EC99773D1CFD3DAB00485F31 /* XCSourceFileDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977231CFD3DAB00485F31 /* XCSourceFileDefinition.m */; };
+		EC99773E1CFD3DAB00485F31 /* XCSubProjectDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977251CFD3DAB00485F31 /* XCSubProjectDefinition.m */; };
+		EC99773F1CFD3DAB00485F31 /* XCTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977271CFD3DAB00485F31 /* XCTarget.m */; };
+		EC9977401CFD3DAB00485F31 /* XCWorkspace.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977291CFD3DAB00485F31 /* XCWorkspace.m */; };
+		EC9977411CFD3DAB00485F31 /* XCXibDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99772B1CFD3DAB00485F31 /* XCXibDefinition.m */; };
+		EC9977441CFD3E0600485F31 /* NSString+GHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977431CFD3E0600485F31 /* NSString+GHBase.m */; };
+		EC99775C1CFD3E1E00485F31 /* DVTSourceTextStorage+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977471CFD3E1E00485F31 /* DVTSourceTextStorage+Operations.m */; };
+		EC99775D1CFD3E1E00485F31 /* NSArray+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977491CFD3E1E00485F31 /* NSArray+Operations.m */; };
+		EC99775E1CFD3E1E00485F31 /* NSFileManager+Headers.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99774B1CFD3E1E00485F31 /* NSFileManager+Headers.m */; };
+		EC99775F1CFD3E1E00485F31 /* NSMutableIndexSet+NSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99774D1CFD3E1E00485F31 /* NSMutableIndexSet+NSArray.m */; };
+		EC9977601CFD3E1E00485F31 /* NSObject+MHLogMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99774F1CFD3E1E00485F31 /* NSObject+MHLogMethods.m */; };
+		EC9977611CFD3E1E00485F31 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977511CFD3E1E00485F31 /* NSString+Extensions.m */; };
+		EC9977621CFD3E1E00485F31 /* NSString+Files.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977531CFD3E1E00485F31 /* NSString+Files.m */; };
+		EC9977631CFD3E1E00485F31 /* NSString+MHNSRange.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977551CFD3E1E00485F31 /* NSString+MHNSRange.m */; };
+		EC9977641CFD3E1E00485F31 /* NSTextView+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977571CFD3E1E00485F31 /* NSTextView+Operations.m */; };
+		EC9977651CFD3E1E00485F31 /* NSView+Dumping.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977591CFD3E1E00485F31 /* NSView+Dumping.m */; };
+		EC9977661CFD3E1E00485F31 /* XCSourceFile+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = EC99775B1CFD3E1E00485F31 /* XCSourceFile+Path.m */; };
+		EC99776A1CFD3F3700485F31 /* MHXcodeDocumentNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9977691CFD3F3700485F31 /* MHXcodeDocumentNavigator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC2718391CFD64FF00BC3D53 /* GHProjManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHProjManager.h; sourceTree = "<group>"; };
+		EC27183A1CFD64FF00BC3D53 /* GHProjManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHProjManager.m; sourceTree = "<group>"; };
+		EC27183C1CFD8B0300BC3D53 /* ImageWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageWindow.xib; sourceTree = "<group>"; };
+		EC27183E1CFD8CE100BC3D53 /* GHImageWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHImageWindowController.h; sourceTree = "<group>"; };
+		EC27183F1CFD8CE100BC3D53 /* GHImageWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHImageWindowController.m; sourceTree = "<group>"; };
+		EC9976E41CFD3D6900485F31 /* ClearUnuseImage.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearUnuseImage.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9976E71CFD3D6900485F31 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		EC9976E91CFD3D6900485F31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		EC9976ED1CFD3D6900485F31 /* ClearUnuseImage.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = ClearUnuseImage.xcscheme; path = ClearUnuseImage.xcodeproj/xcshareddata/xcschemes/ClearUnuseImage.xcscheme; sourceTree = SOURCE_ROOT; };
+		EC9976EF1CFD3D6900485F31 /* ClearUnuseImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearUnuseImage.h; sourceTree = "<group>"; };
+		EC9976F01CFD3D6900485F31 /* ClearUnuseImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearUnuseImage.m; sourceTree = "<group>"; };
+		EC9976F21CFD3D6900485F31 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		EC9976F31CFD3D6900485F31 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		EC9976F51CFD3D6900485F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9976FD1CFD3DAB00485F31 /* NSString+XCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XCAdditions.h"; sourceTree = "<group>"; };
+		EC9976FE1CFD3DAB00485F31 /* NSString+XCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XCAdditions.m"; sourceTree = "<group>"; };
+		EC9976FF1CFD3DAB00485F31 /* XCProject+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCProject+Extensions.h"; sourceTree = "<group>"; };
+		EC9977001CFD3DAB00485F31 /* XCProject+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCProject+Extensions.m"; sourceTree = "<group>"; };
+		EC9977011CFD3DAB00485F31 /* XCTarget+XCProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTarget+XCProject.h"; sourceTree = "<group>"; };
+		EC9977021CFD3DAB00485F31 /* XCTarget+XCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTarget+XCProject.m"; sourceTree = "<group>"; };
+		EC9977031CFD3DAB00485F31 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		EC9977041CFD3DAB00485F31 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		EC9977061CFD3DAB00485F31 /* XCKeyBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCKeyBuilder.h; sourceTree = "<group>"; };
+		EC9977071CFD3DAB00485F31 /* XCKeyBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCKeyBuilder.m; sourceTree = "<group>"; };
+		EC9977081CFD3DAB00485F31 /* XCAbstractDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCAbstractDefinition.h; sourceTree = "<group>"; };
+		EC9977091CFD3DAB00485F31 /* XCAbstractDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCAbstractDefinition.m; sourceTree = "<group>"; };
+		EC99770A1CFD3DAB00485F31 /* XCBuildSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBuildSettings.h; sourceTree = "<group>"; };
+		EC99770B1CFD3DAB00485F31 /* XCBuildSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBuildSettings.m; sourceTree = "<group>"; };
+		EC99770C1CFD3DAB00485F31 /* XCClassDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCClassDefinition.h; sourceTree = "<group>"; };
+		EC99770D1CFD3DAB00485F31 /* XCClassDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCClassDefinition.m; sourceTree = "<group>"; };
+		EC99770E1CFD3DAB00485F31 /* XCFileOperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFileOperationQueue.h; sourceTree = "<group>"; };
+		EC99770F1CFD3DAB00485F31 /* XCFileOperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFileOperationQueue.m; sourceTree = "<group>"; };
+		EC9977101CFD3DAB00485F31 /* XCFrameworkDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFrameworkDefinition.h; sourceTree = "<group>"; };
+		EC9977111CFD3DAB00485F31 /* XCFrameworkDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFrameworkDefinition.m; sourceTree = "<group>"; };
+		EC9977121CFD3DAB00485F31 /* XCGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCGroup.h; sourceTree = "<group>"; };
+		EC9977131CFD3DAB00485F31 /* XCGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCGroup.m; sourceTree = "<group>"; };
+		EC9977141CFD3DAB00485F31 /* XcodeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeEditor.h; sourceTree = "<group>"; };
+		EC9977151CFD3DAB00485F31 /* XcodeGroupMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeGroupMember.h; sourceTree = "<group>"; };
+		EC9977161CFD3DAB00485F31 /* XcodeMemberType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeMemberType.h; sourceTree = "<group>"; };
+		EC9977171CFD3DAB00485F31 /* XcodeMemberType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeMemberType.m; sourceTree = "<group>"; };
+		EC9977181CFD3DAB00485F31 /* XcodeSourceFileType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeSourceFileType.h; sourceTree = "<group>"; };
+		EC9977191CFD3DAB00485F31 /* XcodeSourceFileType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeSourceFileType.m; sourceTree = "<group>"; };
+		EC99771A1CFD3DAB00485F31 /* XCProject+SubProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCProject+SubProject.h"; sourceTree = "<group>"; };
+		EC99771B1CFD3DAB00485F31 /* XCProject+SubProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCProject+SubProject.m"; sourceTree = "<group>"; };
+		EC99771C1CFD3DAB00485F31 /* XCProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCProject.h; sourceTree = "<group>"; };
+		EC99771D1CFD3DAB00485F31 /* XCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCProject.m; sourceTree = "<group>"; };
+		EC99771E1CFD3DAB00485F31 /* XCProjectBuildConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCProjectBuildConfig.h; sourceTree = "<group>"; };
+		EC99771F1CFD3DAB00485F31 /* XCProjectBuildConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCProjectBuildConfig.m; sourceTree = "<group>"; };
+		EC9977201CFD3DAB00485F31 /* XCSourceFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSourceFile.h; sourceTree = "<group>"; };
+		EC9977211CFD3DAB00485F31 /* XCSourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCSourceFile.m; sourceTree = "<group>"; };
+		EC9977221CFD3DAB00485F31 /* XCSourceFileDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSourceFileDefinition.h; sourceTree = "<group>"; };
+		EC9977231CFD3DAB00485F31 /* XCSourceFileDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCSourceFileDefinition.m; sourceTree = "<group>"; };
+		EC9977241CFD3DAB00485F31 /* XCSubProjectDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCSubProjectDefinition.h; sourceTree = "<group>"; };
+		EC9977251CFD3DAB00485F31 /* XCSubProjectDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCSubProjectDefinition.m; sourceTree = "<group>"; };
+		EC9977261CFD3DAB00485F31 /* XCTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTarget.h; sourceTree = "<group>"; };
+		EC9977271CFD3DAB00485F31 /* XCTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTarget.m; sourceTree = "<group>"; };
+		EC9977281CFD3DAB00485F31 /* XCWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCWorkspace.h; sourceTree = "<group>"; };
+		EC9977291CFD3DAB00485F31 /* XCWorkspace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCWorkspace.m; sourceTree = "<group>"; };
+		EC99772A1CFD3DAB00485F31 /* XCXibDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCXibDefinition.h; sourceTree = "<group>"; };
+		EC99772B1CFD3DAB00485F31 /* XCXibDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCXibDefinition.m; sourceTree = "<group>"; };
+		EC9977421CFD3E0600485F31 /* NSString+GHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GHBase.h"; sourceTree = "<group>"; };
+		EC9977431CFD3E0600485F31 /* NSString+GHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GHBase.m"; sourceTree = "<group>"; };
+		EC9977461CFD3E1E00485F31 /* DVTSourceTextStorage+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTSourceTextStorage+Operations.h"; sourceTree = "<group>"; };
+		EC9977471CFD3E1E00485F31 /* DVTSourceTextStorage+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTSourceTextStorage+Operations.m"; sourceTree = "<group>"; };
+		EC9977481CFD3E1E00485F31 /* NSArray+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Operations.h"; sourceTree = "<group>"; };
+		EC9977491CFD3E1E00485F31 /* NSArray+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Operations.m"; sourceTree = "<group>"; };
+		EC99774A1CFD3E1E00485F31 /* NSFileManager+Headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Headers.h"; sourceTree = "<group>"; };
+		EC99774B1CFD3E1E00485F31 /* NSFileManager+Headers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Headers.m"; sourceTree = "<group>"; };
+		EC99774C1CFD3E1E00485F31 /* NSMutableIndexSet+NSArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableIndexSet+NSArray.h"; sourceTree = "<group>"; };
+		EC99774D1CFD3E1E00485F31 /* NSMutableIndexSet+NSArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableIndexSet+NSArray.m"; sourceTree = "<group>"; };
+		EC99774E1CFD3E1E00485F31 /* NSObject+MHLogMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MHLogMethods.h"; sourceTree = "<group>"; };
+		EC99774F1CFD3E1E00485F31 /* NSObject+MHLogMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MHLogMethods.m"; sourceTree = "<group>"; };
+		EC9977501CFD3E1E00485F31 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		EC9977511CFD3E1E00485F31 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
+		EC9977521CFD3E1E00485F31 /* NSString+Files.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Files.h"; sourceTree = "<group>"; };
+		EC9977531CFD3E1E00485F31 /* NSString+Files.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Files.m"; sourceTree = "<group>"; };
+		EC9977541CFD3E1E00485F31 /* NSString+MHNSRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MHNSRange.h"; sourceTree = "<group>"; };
+		EC9977551CFD3E1E00485F31 /* NSString+MHNSRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MHNSRange.m"; sourceTree = "<group>"; };
+		EC9977561CFD3E1E00485F31 /* NSTextView+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+Operations.h"; sourceTree = "<group>"; };
+		EC9977571CFD3E1E00485F31 /* NSTextView+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+Operations.m"; sourceTree = "<group>"; };
+		EC9977581CFD3E1E00485F31 /* NSView+Dumping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Dumping.h"; sourceTree = "<group>"; };
+		EC9977591CFD3E1E00485F31 /* NSView+Dumping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Dumping.m"; sourceTree = "<group>"; };
+		EC99775A1CFD3E1E00485F31 /* XCSourceFile+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCSourceFile+Path.h"; sourceTree = "<group>"; };
+		EC99775B1CFD3E1E00485F31 /* XCSourceFile+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCSourceFile+Path.m"; sourceTree = "<group>"; };
+		EC9977671CFD3F0900485F31 /* XCFXcodePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFXcodePrivate.h; sourceTree = "<group>"; };
+		EC9977681CFD3F3700485F31 /* MHXcodeDocumentNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHXcodeDocumentNavigator.h; sourceTree = "<group>"; };
+		EC9977691CFD3F3700485F31 /* MHXcodeDocumentNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHXcodeDocumentNavigator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC9976E21CFD3D6900485F31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9976E81CFD3D6900485F31 /* AppKit.framework in Frameworks */,
+				EC9976EA1CFD3D6900485F31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC9976DB1CFD3D6900485F31 = {
+			isa = PBXGroup;
+			children = (
+				EC9976EB1CFD3D6900485F31 /* ClearUnuseImage */,
+				EC9976E61CFD3D6900485F31 /* Frameworks */,
+				EC9976E51CFD3D6900485F31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC9976E51CFD3D6900485F31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC9976E41CFD3D6900485F31 /* ClearUnuseImage.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC9976E61CFD3D6900485F31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC9976E71CFD3D6900485F31 /* AppKit.framework */,
+				EC9976E91CFD3D6900485F31 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC9976EB1CFD3D6900485F31 /* ClearUnuseImage */ = {
+			isa = PBXGroup;
+			children = (
+				EC2718391CFD64FF00BC3D53 /* GHProjManager.h */,
+				EC27183A1CFD64FF00BC3D53 /* GHProjManager.m */,
+				EC9977681CFD3F3700485F31 /* MHXcodeDocumentNavigator.h */,
+				EC9977691CFD3F3700485F31 /* MHXcodeDocumentNavigator.m */,
+				EC9977671CFD3F0900485F31 /* XCFXcodePrivate.h */,
+				EC9976FB1CFD3DAB00485F31 /* XcodeEditor */,
+				EC9977451CFD3E1E00485F31 /* Categories */,
+				EC9976EF1CFD3D6900485F31 /* ClearUnuseImage.h */,
+				EC9976F01CFD3D6900485F31 /* ClearUnuseImage.m */,
+				EC9976F21CFD3D6900485F31 /* NSObject_Extension.h */,
+				EC9976F31CFD3D6900485F31 /* NSObject_Extension.m */,
+				EC9977421CFD3E0600485F31 /* NSString+GHBase.h */,
+				EC9977431CFD3E0600485F31 /* NSString+GHBase.m */,
+				EC9976F51CFD3D6900485F31 /* Info.plist */,
+				EC9976EC1CFD3D6900485F31 /* Supporting Files */,
+				EC27183C1CFD8B0300BC3D53 /* ImageWindow.xib */,
+				EC27183E1CFD8CE100BC3D53 /* GHImageWindowController.h */,
+				EC27183F1CFD8CE100BC3D53 /* GHImageWindowController.m */,
+			);
+			path = ClearUnuseImage;
+			sourceTree = "<group>";
+		};
+		EC9976EC1CFD3D6900485F31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC9976ED1CFD3D6900485F31 /* ClearUnuseImage.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC9976FB1CFD3DAB00485F31 /* XcodeEditor */ = {
+			isa = PBXGroup;
+			children = (
+				EC9976FC1CFD3DAB00485F31 /* Categories */,
+				EC9977031CFD3DAB00485F31 /* RegexKitLite.h */,
+				EC9977041CFD3DAB00485F31 /* RegexKitLite.m */,
+				EC9977051CFD3DAB00485F31 /* Utils */,
+				EC9977081CFD3DAB00485F31 /* XCAbstractDefinition.h */,
+				EC9977091CFD3DAB00485F31 /* XCAbstractDefinition.m */,
+				EC99770A1CFD3DAB00485F31 /* XCBuildSettings.h */,
+				EC99770B1CFD3DAB00485F31 /* XCBuildSettings.m */,
+				EC99770C1CFD3DAB00485F31 /* XCClassDefinition.h */,
+				EC99770D1CFD3DAB00485F31 /* XCClassDefinition.m */,
+				EC99770E1CFD3DAB00485F31 /* XCFileOperationQueue.h */,
+				EC99770F1CFD3DAB00485F31 /* XCFileOperationQueue.m */,
+				EC9977101CFD3DAB00485F31 /* XCFrameworkDefinition.h */,
+				EC9977111CFD3DAB00485F31 /* XCFrameworkDefinition.m */,
+				EC9977121CFD3DAB00485F31 /* XCGroup.h */,
+				EC9977131CFD3DAB00485F31 /* XCGroup.m */,
+				EC9977141CFD3DAB00485F31 /* XcodeEditor.h */,
+				EC9977151CFD3DAB00485F31 /* XcodeGroupMember.h */,
+				EC9977161CFD3DAB00485F31 /* XcodeMemberType.h */,
+				EC9977171CFD3DAB00485F31 /* XcodeMemberType.m */,
+				EC9977181CFD3DAB00485F31 /* XcodeSourceFileType.h */,
+				EC9977191CFD3DAB00485F31 /* XcodeSourceFileType.m */,
+				EC99771A1CFD3DAB00485F31 /* XCProject+SubProject.h */,
+				EC99771B1CFD3DAB00485F31 /* XCProject+SubProject.m */,
+				EC99771C1CFD3DAB00485F31 /* XCProject.h */,
+				EC99771D1CFD3DAB00485F31 /* XCProject.m */,
+				EC99771E1CFD3DAB00485F31 /* XCProjectBuildConfig.h */,
+				EC99771F1CFD3DAB00485F31 /* XCProjectBuildConfig.m */,
+				EC9977201CFD3DAB00485F31 /* XCSourceFile.h */,
+				EC9977211CFD3DAB00485F31 /* XCSourceFile.m */,
+				EC9977221CFD3DAB00485F31 /* XCSourceFileDefinition.h */,
+				EC9977231CFD3DAB00485F31 /* XCSourceFileDefinition.m */,
+				EC9977241CFD3DAB00485F31 /* XCSubProjectDefinition.h */,
+				EC9977251CFD3DAB00485F31 /* XCSubProjectDefinition.m */,
+				EC9977261CFD3DAB00485F31 /* XCTarget.h */,
+				EC9977271CFD3DAB00485F31 /* XCTarget.m */,
+				EC9977281CFD3DAB00485F31 /* XCWorkspace.h */,
+				EC9977291CFD3DAB00485F31 /* XCWorkspace.m */,
+				EC99772A1CFD3DAB00485F31 /* XCXibDefinition.h */,
+				EC99772B1CFD3DAB00485F31 /* XCXibDefinition.m */,
+			);
+			path = XcodeEditor;
+			sourceTree = "<group>";
+		};
+		EC9976FC1CFD3DAB00485F31 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EC9976FD1CFD3DAB00485F31 /* NSString+XCAdditions.h */,
+				EC9976FE1CFD3DAB00485F31 /* NSString+XCAdditions.m */,
+				EC9976FF1CFD3DAB00485F31 /* XCProject+Extensions.h */,
+				EC9977001CFD3DAB00485F31 /* XCProject+Extensions.m */,
+				EC9977011CFD3DAB00485F31 /* XCTarget+XCProject.h */,
+				EC9977021CFD3DAB00485F31 /* XCTarget+XCProject.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EC9977051CFD3DAB00485F31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EC9977061CFD3DAB00485F31 /* XCKeyBuilder.h */,
+				EC9977071CFD3DAB00485F31 /* XCKeyBuilder.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EC9977451CFD3E1E00485F31 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EC9977461CFD3E1E00485F31 /* DVTSourceTextStorage+Operations.h */,
+				EC9977471CFD3E1E00485F31 /* DVTSourceTextStorage+Operations.m */,
+				EC9977481CFD3E1E00485F31 /* NSArray+Operations.h */,
+				EC9977491CFD3E1E00485F31 /* NSArray+Operations.m */,
+				EC99774A1CFD3E1E00485F31 /* NSFileManager+Headers.h */,
+				EC99774B1CFD3E1E00485F31 /* NSFileManager+Headers.m */,
+				EC99774C1CFD3E1E00485F31 /* NSMutableIndexSet+NSArray.h */,
+				EC99774D1CFD3E1E00485F31 /* NSMutableIndexSet+NSArray.m */,
+				EC99774E1CFD3E1E00485F31 /* NSObject+MHLogMethods.h */,
+				EC99774F1CFD3E1E00485F31 /* NSObject+MHLogMethods.m */,
+				EC9977501CFD3E1E00485F31 /* NSString+Extensions.h */,
+				EC9977511CFD3E1E00485F31 /* NSString+Extensions.m */,
+				EC9977521CFD3E1E00485F31 /* NSString+Files.h */,
+				EC9977531CFD3E1E00485F31 /* NSString+Files.m */,
+				EC9977541CFD3E1E00485F31 /* NSString+MHNSRange.h */,
+				EC9977551CFD3E1E00485F31 /* NSString+MHNSRange.m */,
+				EC9977561CFD3E1E00485F31 /* NSTextView+Operations.h */,
+				EC9977571CFD3E1E00485F31 /* NSTextView+Operations.m */,
+				EC9977581CFD3E1E00485F31 /* NSView+Dumping.h */,
+				EC9977591CFD3E1E00485F31 /* NSView+Dumping.m */,
+				EC99775A1CFD3E1E00485F31 /* XCSourceFile+Path.h */,
+				EC99775B1CFD3E1E00485F31 /* XCSourceFile+Path.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC9976E31CFD3D6900485F31 /* ClearUnuseImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC9976F81CFD3D6900485F31 /* Build configuration list for PBXNativeTarget "ClearUnuseImage" */;
+			buildPhases = (
+				EC9976E01CFD3D6900485F31 /* Sources */,
+				EC9976E11CFD3D6900485F31 /* Resources */,
+				EC9976E21CFD3D6900485F31 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClearUnuseImage;
+			productName = ClearUnuseImage;
+			productReference = EC9976E41CFD3D6900485F31 /* ClearUnuseImage.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC9976DC1CFD3D6900485F31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ApesStudio;
+				TargetAttributes = {
+					EC9976E31CFD3D6900485F31 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EC9976DF1CFD3D6900485F31 /* Build configuration list for PBXProject "ClearUnuseImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EC9976DB1CFD3D6900485F31;
+			productRefGroup = EC9976E51CFD3D6900485F31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC9976E31CFD3D6900485F31 /* ClearUnuseImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC9976E11CFD3D6900485F31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9976EE1CFD3D6900485F31 /* ClearUnuseImage.xcscheme in Resources */,
+				EC27183D1CFD8B0300BC3D53 /* ImageWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC9976E01CFD3D6900485F31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9977331CFD3DAB00485F31 /* XCClassDefinition.m in Sources */,
+				EC9977621CFD3E1E00485F31 /* NSString+Files.m in Sources */,
+				EC2718401CFD8CE100BC3D53 /* GHImageWindowController.m in Sources */,
+				EC9977301CFD3DAB00485F31 /* XCKeyBuilder.m in Sources */,
+				EC9977311CFD3DAB00485F31 /* XCAbstractDefinition.m in Sources */,
+				EC9977641CFD3E1E00485F31 /* NSTextView+Operations.m in Sources */,
+				EC99773A1CFD3DAB00485F31 /* XCProject.m in Sources */,
+				EC99773E1CFD3DAB00485F31 /* XCSubProjectDefinition.m in Sources */,
+				EC9977651CFD3E1E00485F31 /* NSView+Dumping.m in Sources */,
+				EC9977341CFD3DAB00485F31 /* XCFileOperationQueue.m in Sources */,
+				EC99773B1CFD3DAB00485F31 /* XCProjectBuildConfig.m in Sources */,
+				EC9977661CFD3E1E00485F31 /* XCSourceFile+Path.m in Sources */,
+				EC9977631CFD3E1E00485F31 /* NSString+MHNSRange.m in Sources */,
+				EC9977401CFD3DAB00485F31 /* XCWorkspace.m in Sources */,
+				EC9977611CFD3E1E00485F31 /* NSString+Extensions.m in Sources */,
+				EC99775C1CFD3E1E00485F31 /* DVTSourceTextStorage+Operations.m in Sources */,
+				EC9977351CFD3DAB00485F31 /* XCFrameworkDefinition.m in Sources */,
+				EC9977441CFD3E0600485F31 /* NSString+GHBase.m in Sources */,
+				EC9977371CFD3DAB00485F31 /* XcodeMemberType.m in Sources */,
+				EC99772F1CFD3DAB00485F31 /* RegexKitLite.m in Sources */,
+				EC99775F1CFD3E1E00485F31 /* NSMutableIndexSet+NSArray.m in Sources */,
+				EC27183B1CFD64FF00BC3D53 /* GHProjManager.m in Sources */,
+				EC99772C1CFD3DAB00485F31 /* NSString+XCAdditions.m in Sources */,
+				EC9977381CFD3DAB00485F31 /* XcodeSourceFileType.m in Sources */,
+				EC99772E1CFD3DAB00485F31 /* XCTarget+XCProject.m in Sources */,
+				EC99773C1CFD3DAB00485F31 /* XCSourceFile.m in Sources */,
+				EC99776A1CFD3F3700485F31 /* MHXcodeDocumentNavigator.m in Sources */,
+				EC99775E1CFD3E1E00485F31 /* NSFileManager+Headers.m in Sources */,
+				EC9976F11CFD3D6900485F31 /* ClearUnuseImage.m in Sources */,
+				EC9977601CFD3E1E00485F31 /* NSObject+MHLogMethods.m in Sources */,
+				EC99773F1CFD3DAB00485F31 /* XCTarget.m in Sources */,
+				EC9977361CFD3DAB00485F31 /* XCGroup.m in Sources */,
+				EC99772D1CFD3DAB00485F31 /* XCProject+Extensions.m in Sources */,
+				EC99775D1CFD3E1E00485F31 /* NSArray+Operations.m in Sources */,
+				EC9977411CFD3DAB00485F31 /* XCXibDefinition.m in Sources */,
+				EC99773D1CFD3DAB00485F31 /* XCSourceFileDefinition.m in Sources */,
+				EC9977321CFD3DAB00485F31 /* XCBuildSettings.m in Sources */,
+				EC9976F41CFD3D6900485F31 /* NSObject_Extension.m in Sources */,
+				EC9977391CFD3DAB00485F31 /* XCProject+SubProject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EC9976F61CFD3D6900485F31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		EC9976F71CFD3D6900485F31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		EC9976F91CFD3D6900485F31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = ClearUnuseImage/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-licucore";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apesstudio.ClearUnuseImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		EC9976FA1CFD3D6900485F31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = ClearUnuseImage/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-licucore";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apesstudio.ClearUnuseImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC9976DF1CFD3D6900485F31 /* Build configuration list for PBXProject "ClearUnuseImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9976F61CFD3D6900485F31 /* Debug */,
+				EC9976F71CFD3D6900485F31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC9976F81CFD3D6900485F31 /* Build configuration list for PBXNativeTarget "ClearUnuseImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9976F91CFD3D6900485F31 /* Debug */,
+				EC9976FA1CFD3D6900485F31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC9976DC1CFD3D6900485F31 /* Project object */;
+}
