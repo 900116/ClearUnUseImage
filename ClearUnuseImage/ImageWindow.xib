@@ -7,6 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="GHImageWindowController">
             <connections>
+                <outlet property="indicator" destination="kmX-JR-sOn" id="nnt-VD-vaF"/>
                 <outlet property="tableView" destination="3cH-KR-Jki" id="1Au-R6-zRT"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="iJt-Te-M2C"/>
             </connections>
@@ -99,14 +100,19 @@
                             <action selector="deleteAll:" target="-2" id="NyP-fc-u0n"/>
                         </connections>
                     </button>
+                    <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="kmX-JR-sOn">
+                        <rect key="frame" x="299" y="240" width="16" height="16"/>
+                    </progressIndicator>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Lur-D1-nGQ" firstAttribute="centerY" secondItem="o9b-IN-OP7" secondAttribute="centerY" id="1Oh-0L-9yY"/>
                     <constraint firstItem="o9b-IN-OP7" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="11" id="Gst-mI-ig9"/>
                     <constraint firstItem="AdP-32-rir" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="10" id="HWe-xX-81C"/>
                     <constraint firstAttribute="bottom" secondItem="AdP-32-rir" secondAttribute="bottom" constant="10" id="IHz-rQ-hER"/>
+                    <constraint firstItem="kmX-JR-sOn" firstAttribute="centerY" secondItem="Lur-D1-nGQ" secondAttribute="centerY" id="KmL-vV-zZ6"/>
                     <constraint firstItem="o9b-IN-OP7" firstAttribute="leading" secondItem="Lur-D1-nGQ" secondAttribute="trailing" constant="10" id="M5X-kI-MHG"/>
                     <constraint firstAttribute="trailing" secondItem="AdP-32-rir" secondAttribute="trailing" constant="10" id="XzT-8v-5b5"/>
+                    <constraint firstItem="Lur-D1-nGQ" firstAttribute="leading" secondItem="kmX-JR-sOn" secondAttribute="trailing" constant="10" id="hH8-81-qaM"/>
                     <constraint firstItem="AdP-32-rir" firstAttribute="top" secondItem="o9b-IN-OP7" secondAttribute="bottom" constant="10" id="oM2-67-P9z"/>
                     <constraint firstItem="o9b-IN-OP7" firstAttribute="trailing" secondItem="hbf-6a-tCz" secondAttribute="trailing" id="w0j-pp-6TQ"/>
                 </constraints>

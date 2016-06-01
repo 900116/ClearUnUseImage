@@ -10,6 +10,7 @@
 
 @interface GHImageWindowController : NSWindowController<NSTableViewDataSource,NSTabViewDelegate>
 @property(nonatomic,weak) IBOutlet NSTableView* tableView;
+@property(nonatomic,weak) IBOutlet NSProgressIndicator *indicator;
 -(IBAction)deleteRows:(id)sender;
 -(IBAction)deleteAll:(id)sender;
 @end

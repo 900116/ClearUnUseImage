@@ -31,9 +31,13 @@
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     self.tableView.dataSource = self;
+    self.indicator.hidden = NO;
+    [self.indicator startAnimation:nil];
     [[GHProjManager sharedInstance] detectFilesBlockComplite:^{
         _loading = YES;
         [self.tableView reloadData];
+        self.indicator.hidden = YES;
+        [self.indicator stopAnimation:nil];
     }];
 }
 
