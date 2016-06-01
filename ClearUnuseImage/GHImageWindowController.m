@@ -36,8 +36,8 @@
     [[GHProjManager sharedInstance] detectFilesBlockComplite:^{
         _loading = YES;
         [self.tableView reloadData];
-        self.indicator.hidden = YES;
         [self.indicator stopAnimation:nil];
+        self.indicator.hidden = YES;
     }];
 }
 
@@ -59,6 +59,14 @@
     {
         tableColumn.title = [data imageKey];
         return [data imageKey];
+    }
+    else  if ([identifier isEqualToString:@"pre"]) {
+        NSCell *dycell = [[NSCell alloc]init];
+        NSImage* image = [[NSImage alloc]initWithContentsOfFile:data.fullPath];
+        image.size = CGSizeMake(60, 60);
+        dycell.image = image;
+        [tableColumn setDataCell:dycell];
+        return dycell;
     }
     return nil;
 }
