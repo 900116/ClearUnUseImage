@@ -47,7 +47,8 @@
                     [mutableArray addObject:imgFile];
                     continue;
                 }
-                NSString* regx = [NSString stringWithFormat:@"\"%@(.png|.jpg)?\"",imgFile.imageKey];
+                NSString* imageKey = [imgFile.imageKey stringByReplacingOccurrencesOfString:@"[" withString:@"\\["];
+                NSString* regx = [NSString stringWithFormat:@"\"%@(.png|.jpg)?\"",imageKey];
                 NSArray* result = [contentStr componentsMatchedByRegex:regx];
                 if (result.count > 0) {
                     [mutableArray addObject:imgFile];
