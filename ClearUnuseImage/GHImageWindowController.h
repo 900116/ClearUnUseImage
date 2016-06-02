@@ -13,4 +13,5 @@
 @property(nonatomic,weak) IBOutlet NSProgressIndicator *indicator;
 -(IBAction)deleteRows:(id)sender;
 -(IBAction)deleteAll:(id)sender;
+-(IBAction)ignore:(id)sender;
 @end

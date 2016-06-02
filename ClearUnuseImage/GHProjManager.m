@@ -62,6 +62,15 @@
         });
     });
 }
+-(BOOL)isIgnores:(NSString *)imgkey
+{
+    NSString* path = [NSString stringWithFormat:@"%@/ignoreImg.data",_rootPath];
+    NSMutableArray* array = [[NSArray arrayWithContentsOfFile:path] mutableCopy];
+    if (array.count == 0) {
+        return NO;
+    }
+    return [array containsObject:imgkey];
+}
 
 -(void)getAllFile
 {
@@ -73,8 +82,12 @@
         if ([str hasSuffix:@".png"] || [str hasSuffix:@".jpg"]) {
             if ([str rangeOfString:@".appiconset/"].location == NSNotFound) {
                 if ([str rangeOfString:@".launchimage/"].location == NSNotFound) {
+                    NSString* imageKey = [[[[[str lastPathComponent] stringByReplacingOccurrencesOfString:@"@2x" withString:@""] stringByReplacingOccurrencesOfString:@"@3x" withString:@""] stringByReplacingOccurrencesOfString:@".png" withString:@""]stringByReplacingOccurrencesOfString:@".jpg" withString:@""];
+                    if ([self isIgnores:imageKey]) {
+                        continue;
+                    }
                     GHImageFile* imageFile = [[GHImageFile alloc]init];
-                    imageFile.imageKey = [[[[[str lastPathComponent] stringByReplacingOccurrencesOfString:@"@2x" withString:@""] stringByReplacingOccurrencesOfString:@"@3x" withString:@""] stringByReplacingOccurrencesOfString:@".png" withString:@""]stringByReplacingOccurrencesOfString:@".jpg" withString:@""];
+                    imageFile.imageKey = imageKey;
                     imageFile.subPath = str;
                     imageFile.fullPath = [NSString stringWithFormat:@"%@/%@",_rootPath,str];
                     [images addObject:imageFile];
@@ -145,6 +158,20 @@
 }
 
 -(void)removeImages:(NSArray<GHImageFile *>*)images {
+    [self.allImages removeObjectsInArray:images];
+    [self.imageFiless removeObjectsInArray:images];
+}
+
+-(void)saveIgnoreImgs:(NSArray<GHImageFile *>*)images {
+    NSString* path = [NSString stringWithFormat:@"%@/ignoreImg.data",_rootPath];
+    NSMutableArray* array = [[NSArray arrayWithContentsOfFile:path] mutableCopy];
+    if (!array) {
+        array = [NSMutableArray new];
+    }
+    for (GHImageFile* imgFile in images) {
+        [array addObject:imgFile.imageKey];
+    }
+    [array writeToFile:path atomically:YES];
     [self.allImages removeObjectsInArray:images];
     [self.imageFiless removeObjectsInArray:images];
 }

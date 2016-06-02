@@ -103,6 +103,13 @@
     }];
 }
 
+-(IBAction)ignore:(id)sender {
+    NSIndexSet * indexSet = [self.tableView selectedRowIndexes];
+    NSArray*images = [[GHProjManager sharedInstance].imageFiless objectsAtIndexes:indexSet];
+    [[GHProjManager sharedInstance] saveIgnoreImgs:images];
+    [self.tableView reloadData];
+}
+
 
 
 @end

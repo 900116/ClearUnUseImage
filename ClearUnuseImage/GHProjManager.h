@@ -18,4 +18,5 @@
 -(void)detectFilesBlockComplite:(void(^)())finish;
 -(void)removeImages:(NSArray<GHImageFile *>*)images;
 @property(nonatomic,strong) NSMutableArray<GHImageFile *>* imageFiless;
+-(void)saveIgnoreImgs:(NSArray<GHImageFile *>*)images;
 @end

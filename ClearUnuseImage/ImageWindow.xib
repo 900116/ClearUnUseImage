@@ -114,8 +114,18 @@
                         </connections>
                     </button>
                     <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="kmX-JR-sOn">
-                        <rect key="frame" x="499" y="240" width="16" height="16"/>
+                        <rect key="frame" x="435" y="241" width="16" height="16"/>
                     </progressIndicator>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ySp-Ed-w3n">
+                        <rect key="frame" x="455" y="231" width="66" height="32"/>
+                        <buttonCell key="cell" type="push" title="忽略" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="a7F-BC-kFV">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="ignore:" target="-2" id="QdW-qO-0fy"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Lur-D1-nGQ" firstAttribute="centerY" secondItem="o9b-IN-OP7" secondAttribute="centerY" id="1Oh-0L-9yY"/>
@@ -125,7 +135,9 @@
                     <constraint firstItem="kmX-JR-sOn" firstAttribute="centerY" secondItem="Lur-D1-nGQ" secondAttribute="centerY" id="KmL-vV-zZ6"/>
                     <constraint firstItem="o9b-IN-OP7" firstAttribute="leading" secondItem="Lur-D1-nGQ" secondAttribute="trailing" constant="10" id="M5X-kI-MHG"/>
                     <constraint firstAttribute="trailing" secondItem="AdP-32-rir" secondAttribute="trailing" constant="10" id="XzT-8v-5b5"/>
-                    <constraint firstItem="Lur-D1-nGQ" firstAttribute="leading" secondItem="kmX-JR-sOn" secondAttribute="trailing" constant="10" id="hH8-81-qaM"/>
+                    <constraint firstItem="ySp-Ed-w3n" firstAttribute="centerY" secondItem="Lur-D1-nGQ" secondAttribute="centerY" id="cdV-oZ-fK8"/>
+                    <constraint firstItem="ySp-Ed-w3n" firstAttribute="leading" secondItem="kmX-JR-sOn" secondAttribute="trailing" constant="10" id="eMs-4A-6Hp"/>
+                    <constraint firstItem="Lur-D1-nGQ" firstAttribute="leading" secondItem="ySp-Ed-w3n" secondAttribute="trailing" constant="10" id="m9y-w0-IvE"/>
                     <constraint firstItem="AdP-32-rir" firstAttribute="top" secondItem="o9b-IN-OP7" secondAttribute="bottom" constant="10" id="oM2-67-P9z"/>
                     <constraint firstItem="o9b-IN-OP7" firstAttribute="trailing" secondItem="hbf-6a-tCz" secondAttribute="trailing" id="w0j-pp-6TQ"/>
                 </constraints>
