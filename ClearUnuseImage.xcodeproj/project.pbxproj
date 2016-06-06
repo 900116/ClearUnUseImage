@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1242A81D0516DC00518A1A /* GHSettingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1242A61D0516DC00518A1A /* GHSettingWindow.m */; };
+		EC1242A91D0516DC00518A1A /* GHSettingWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1242A71D0516DC00518A1A /* GHSettingWindow.xib */; };
 		EC27183B1CFD64FF00BC3D53 /* GHProjManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC27183A1CFD64FF00BC3D53 /* GHProjManager.m */; };
 		EC27183D1CFD8B0300BC3D53 /* ImageWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC27183C1CFD8B0300BC3D53 /* ImageWindow.xib */; };
 		EC2718401CFD8CE100BC3D53 /* GHImageWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC27183F1CFD8CE100BC3D53 /* GHImageWindowController.m */; };
@@ -53,6 +55,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC1242A51D0516DC00518A1A /* GHSettingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHSettingWindow.h; sourceTree = "<group>"; };
+		EC1242A61D0516DC00518A1A /* GHSettingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHSettingWindow.m; sourceTree = "<group>"; };
+		EC1242A71D0516DC00518A1A /* GHSettingWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHSettingWindow.xib; sourceTree = "<group>"; };
 		EC2718391CFD64FF00BC3D53 /* GHProjManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHProjManager.h; sourceTree = "<group>"; };
 		EC27183A1CFD64FF00BC3D53 /* GHProjManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHProjManager.m; sourceTree = "<group>"; };
 		EC27183C1CFD8B0300BC3D53 /* ImageWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageWindow.xib; sourceTree = "<group>"; };
@@ -202,6 +207,9 @@
 				EC27183C1CFD8B0300BC3D53 /* ImageWindow.xib */,
 				EC27183E1CFD8CE100BC3D53 /* GHImageWindowController.h */,
 				EC27183F1CFD8CE100BC3D53 /* GHImageWindowController.m */,
+				EC1242A51D0516DC00518A1A /* GHSettingWindow.h */,
+				EC1242A61D0516DC00518A1A /* GHSettingWindow.m */,
+				EC1242A71D0516DC00518A1A /* GHSettingWindow.xib */,
 			);
 			path = ClearUnuseImage;
 			sourceTree = "<group>";
@@ -369,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9976EE1CFD3D6900485F31 /* ClearUnuseImage.xcscheme in Resources */,
+				EC1242A91D0516DC00518A1A /* GHSettingWindow.xib in Resources */,
 				EC27183D1CFD8B0300BC3D53 /* ImageWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +414,7 @@
 				EC99772C1CFD3DAB00485F31 /* NSString+XCAdditions.m in Sources */,
 				EC9977381CFD3DAB00485F31 /* XcodeSourceFileType.m in Sources */,
 				EC99772E1CFD3DAB00485F31 /* XCTarget+XCProject.m in Sources */,
+				EC1242A81D0516DC00518A1A /* GHSettingWindow.m in Sources */,
 				EC99773C1CFD3DAB00485F31 /* XCSourceFile.m in Sources */,
 				EC99776A1CFD3F3700485F31 /* MHXcodeDocumentNavigator.m in Sources */,
 				EC99775E1CFD3E1E00485F31 /* NSFileManager+Headers.m in Sources */,

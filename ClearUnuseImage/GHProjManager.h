@@ -14,6 +14,7 @@
 @end
 
 @interface GHProjManager : NSObject
+@property(nonatomic,assign) BOOL isReactiveNative;
 +(instancetype)sharedInstance;
 -(void)detectFilesBlockComplite:(void(^)())finish;
 -(void)removeImages:(NSArray<GHImageFile *>*)images;

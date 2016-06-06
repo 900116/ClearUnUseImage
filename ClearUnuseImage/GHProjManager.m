@@ -99,6 +99,11 @@
                 [sourceFiles addObject:[NSString stringWithFormat:@"%@/%@",_rootPath,str]];
             }
         }
+        else if(self.isReactiveNative && ([str hasSuffix:@".html"] || [str hasSuffix:@".css"] || [str hasSuffix:@".htm"])){
+            if ([str rangeOfString:@"Pods"].location == NSNotFound) {
+                [sourceFiles addObject:[NSString stringWithFormat:@"%@/%@",_rootPath,str]];
+            }
+        }
     }
     self.ocFiles = sourceFiles;
     self.allImages = images;
@@ -116,6 +121,28 @@
             [self getAllFile];
         });
     }
+    
+    NSDictionary*dict = [NSDictionary dictionaryWithContentsOfFile:[self settingPath]];
+    if (dict) {
+        [GHProjManager sharedInstance].isReactiveNative = [dict[@"isRect"] boolValue];
+    }
+}
+
+
+-(NSString *)settingPath
+{
+    NSString* path = [NSString stringWithFormat:@"%@/clearimageSetting.data",_rootPath];
+    return path;
+}
+
+-(void)setIsReactiveNative:(BOOL)isReactiveNative
+{
+    _isReactiveNative = isReactiveNative;
+    NSDictionary* dict = @{@"isRect":@(isReactiveNative)};
+    [dict writeToFile:[self settingPath] atomically:YES];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        [self getAllFile];
+    });
 }
 
 

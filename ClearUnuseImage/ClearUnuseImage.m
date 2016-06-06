@@ -9,6 +9,7 @@
 #import "ClearUnuseImage.h"
 #import "GHProjManager.h"
 #import "GHImageWindowController.h"
+#import "GHSettingWindow.h"
 
 @interface ClearUnuseImage()
 
@@ -19,6 +20,7 @@
 {
     GHProjManager *_manager;
     GHImageWindowController* _preferenceController;
+    GHSettingWindow* _setting;
 }
 
 + (instancetype)sharedPlugin
@@ -58,14 +60,28 @@
     // Sample Menu Item:
     NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
     if (menuItem) {
-        [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-        NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"ClearUnUseImage" action:@selector(doMenuAction) keyEquivalent:@""];
+        NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"ClearUnUserImage" action:nil keyEquivalent:@""];
         //[actionMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
-        [actionMenuItem setTarget:self];
         [[menuItem submenu] addItem:actionMenuItem];
+        [self createSubMenu:actionMenuItem];
+
     }
     [self go];
 }
+
+-(void)createSubMenu:(NSMenuItem *)rootMenuItem
+{
+    NSMenu *menu = [[NSMenu alloc]initWithTitle:@"ClearUnUserImage"];
+    NSMenuItem *clear = [[NSMenuItem alloc]initWithTitle:@"Clear" action:@selector(doMenuAction) keyEquivalent:@""];
+    [clear setTarget:self];
+    [menu addItem:clear];
+    
+    NSMenuItem *setting = [[NSMenuItem alloc]initWithTitle:@"Setting" action:@selector(settingAction) keyEquivalent:@""];
+    [setting setTarget:self];
+    [menu addItem:setting];
+    [rootMenuItem setSubmenu:menu];
+}
+
 
 -(void)go
 {
@@ -82,6 +98,11 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)settingAction {
+    _setting = [[GHSettingWindow alloc] init];
+    [_setting showWindow:self];
 }
 
 @end
